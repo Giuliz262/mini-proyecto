@@ -1,8 +1,11 @@
-# React + Vite
+# Explicación
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Hice la importación de los hooks.
 
-Currently, two official plugins are available:
+Cree el contexto CountContext utilizando React.createContext() así es utilizado para pasar el estado del contador a la función setCount y que así no sea necesario pasar proops manualmente.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Se utilizó useState para inicializar el estado del contador en 0.
+Utilicé UseEffect para actualizar el título de la página (cada vez que el número del contador cambia, se actualiza el título de la página con el valor actual del contador)
+Utilicé useContext para acceder al valor del contador y la función setCount.
+
+Todo el contenido está dentro de "< countContext.Provider > " para que el contexto esté disponible para los componentes descendientes.
